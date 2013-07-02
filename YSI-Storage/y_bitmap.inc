@@ -63,12 +63,12 @@ Variables:
 		-
 \**--------------------------------------------------------------------------**/
 
-#include "..\YSI-Internal\y_version"
-#include "..\YSI-Data\y_bit"
-#include "..\YSI-Core\y_utils"
-#include "..\YSI-Coding\y_malloc"
+#include "..\YSI_Internal\y_version"
+#include "..\YSI_Data\y_bit"
+#include "..\YSI_Core\y_utils"
+#include "..\YSI_Coding\y_malloc"
 // Because having colours is always good...
-#include "..\YSI-Server\y_colours"
+#include "..\YSI_Server\y_colours"
 
 #if defined YSI_MALLOC_SECURE
 	#error y_bitmap does not (well) work with YSI_MALLOC_SECURE.
@@ -84,6 +84,6 @@ Variables:
 #include "y_bitmap/write"
 
 #if defined YSI_TESTS
-	#include "..\YSI-Core\y_testing"
+	#include "..\YSI_Core\y_testing"
 	#include "y_bitmap/tests"
 #endif
